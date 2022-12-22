@@ -1,3 +1,22 @@
+update application.properties for DB properties
+mvn package -DSkipTests=true
+create DB schema with name 'testdb'
+java -jar target\jar file
+
+run the insert queries
+
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+frontend
+npm i 
+npm i -g @angular/cli
+ng serve
+
+# to run application with overridden property values
+java -jar target\spring-boot-security-jwt-0.0.1-SNAPSHOT.jar  --spring.jpa.hibernate.ddl-auto=create --spring.profiles.active=prod
+
 # Spring Boot JWT Authentication example with Spring Security & Spring Data JPA
 
 ## User Registration, User Login and Authorization process.
